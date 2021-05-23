@@ -1,0 +1,97 @@
+$body-bg:#333;
+$font-color:#fff;
+$primary-color:#008ed6;
+$icon-font-size:30px;
+
+body{
+  background: $body-bg;
+  color: $font-color;
+}
+.navbar{
+  border-bottom: 3px solid $primary-color;
+  background: #292b2c;
+  opacity: 0.8;
+}
+#home-section{
+  background: url('../img/bg7.jpg') no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+
+  .dark-overlay{
+    background: rgba(71, 68, 68, 0.6);
+    min-height: 700px;
+  }
+  .fa{
+    background: #fff;
+    color: $primary-color;
+    padding: 4px;
+    font-size: $icon-font-size;
+    border-radius: 5px;
+  }
+  .card-form{
+    opacity: 0.8;
+  }
+  .home-inner{
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+}
+
+#create-head-section{
+  background: $primary-color;
+}
+
+#explore-main-section{
+
+  .fa{
+    font-size: $icon-font-size;
+    background: rgb(231, 222, 222);
+    color: rgb(150, 114, 114);
+    border-radius:5px ;
+    padding: 4px;
+  }
+ img{
+   height: 90%;
+ }
+}
+
+#create-main-section{
+
+  
+  .fa{
+    font-size: $icon-font-size;
+    background: rgb(216, 170, 170);
+    color: rgb(214, 40, 40);
+    border-radius: 5px;
+    padding: 4px;
+  }
+  img{
+    padding: 10px;
+  }
+}
+
+#share-main-section{
+  .fa{
+    font-size: $icon-font-size;
+    background: rgb(0, 255, 149);
+    color: rgb(114, 114, 231);
+    border-radius: 5px;
+    padding: 4px;
+  }
+}
+
+
+
+
+@media(max-width:767px){
+#home-section h1{
+  font-size: 36px;
+}
+#create-main-section{
+img{
+  width: 90%;
+  height: auto;
+}
+}
+}
